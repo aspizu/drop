@@ -10,6 +10,7 @@
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "lint": "oxlint",
+    "dev": "pnpm --filter @drop/client dev",
     "build": "pnpm --filter @drop/client build",
     "deploy": "wrangler deploy"
   },

@@ -234,6 +234,9 @@ importers:
 
   packages/client:
     dependencies:
+      '@drop/core':
+        specifier: workspace:*
+        version: link:../core
       '@fontsource-variable/geist':
         specifier: ^5.2.9
         version: 5.2.9
