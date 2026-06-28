@@ -36,4 +36,12 @@
       "enabled": true,
     },
   },
+  "d1_databases": [
+    {
+      "binding": "D1",
+      "database_name": "drop",
+      "database_id": "66db7e55-ac4f-41b8-9d02-7449f41819c6",
+      "remote": true,
+    },
+  ],
 }
