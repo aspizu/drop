@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2026-05-26",
+  "name": "drop",
+  "main": "packages/server/src/index.ts",
+  "compatibility_flags": ["nodejs_compat"],
+  "upload_source_maps": true,
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "directory": "packages/client/dist",
+  },
+  "routes": [
+    {
+      "pattern": "drop.aspiz.uk",
+      "zone_name": "aspiz.uk",
+      "custom_domain": true,
+    },
+  ],
+  "ratelimits": [
+    {
+      "name": "RATELIMIT",
+      "namespace_id": "001",
+      "simple": {
+        "limit": 1000,
+        "period": 10,
+      },
+    },
+  ],
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+    },
+    "traces": {
+      "enabled": true,
+    },
+  },
+}

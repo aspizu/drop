@@ -1,0 +1,10 @@
+packages:
+  - packages/*
+allowBuilds:
+  esbuild: true
+  lefthook: true
+  sharp: true
+  workerd: true
+minimumReleaseAge: 1140
+minimumReleaseAgeExclude:
+  - oxlint-plugin-aspizuism
