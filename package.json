@@ -9,7 +9,9 @@
     "postinstall": "lefthook install",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "build": "pnpm --filter @drop/client build",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
