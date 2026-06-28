@@ -1,6 +1,6 @@
 import {HTTPException} from "hono/http-exception"
 
-import type {Context} from "../utils/hono"
+import type {Context} from "@/utils/hono"
 
 export default async function ratelimit(c: Context, next: () => Promise<void>) {
   const {success} = await c.env.RATELIMIT.limit({

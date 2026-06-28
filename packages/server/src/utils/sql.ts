@@ -1,4 +1,4 @@
-import type {Context} from "./hono"
+import type {Context} from "@/utils/hono"
 
 function _sqlify(value: unknown) {
   if (value instanceof Date) {

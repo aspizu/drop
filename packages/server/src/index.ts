@@ -3,11 +3,11 @@ import {HTTPException} from "hono/http-exception"
 import {v7} from "uuid"
 import z from "zod"
 
-import ratelimit from "./middleware/ratelimit"
-import hono from "./utils/hono"
-import {generateRandomID} from "./utils/id"
-import {makeS3} from "./utils/s3"
-import sql from "./utils/sql"
+import ratelimit from "@/middleware/ratelimit"
+import hono from "@/utils/hono"
+import {generateRandomID} from "@/utils/id"
+import {makeS3} from "@/utils/s3"
+import sql from "@/utils/sql"
 
 /** 24 hours */
 const MAX_EXPIRY = 1000 * 60 * 60 * 24

@@ -3,6 +3,7 @@
   "compatibility_date": "2026-05-26",
   "name": "drop",
   "main": "packages/server/src/index.ts",
+  "tsconfig": "packages/server/tsconfig.json",
   "compatibility_flags": ["nodejs_compat"],
   "upload_source_maps": true,
   "assets": {

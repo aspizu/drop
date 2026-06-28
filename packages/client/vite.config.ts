@@ -1,3 +1,5 @@
+import {fileURLToPath} from "node:url"
+
 import babel from "@rolldown/plugin-babel"
 import tailwindcss from "@tailwindcss/vite"
 import {tanstackRouter} from "@tanstack/router-plugin/vite"
@@ -7,6 +9,12 @@ import {defineConfig, loadEnv} from "vite"
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, process.cwd())
   return {
+    resolve: {
+      alias: {
+        "@": fileURLToPath(new URL("./src", import.meta.url)),
+        "#": fileURLToPath(new URL("./src", import.meta.url)),
+      },
+    },
     plugins: [
       tanstackRouter({
         target: "react",

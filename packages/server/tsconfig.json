@@ -2,6 +2,9 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "types": ["../../worker-configuration.d.ts"]
   },
   "include": ["src/**/*.ts"]

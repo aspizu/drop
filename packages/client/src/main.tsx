@@ -3,15 +3,15 @@ import {createRouter, RouterProvider} from "@tanstack/react-router"
 import {StrictMode, useEffect} from "react"
 import {createRoot} from "react-dom/client"
 
-import {LoadingBar, startLoading, stopLoading} from "#components/loadingbar.tsx"
-import {Toaster} from "#components/ui/sonner"
-import {pullConfig} from "#lib/config"
-import * as api from "#services/api"
+import {LoadingBar, startLoading, stopLoading} from "@/components/loadingbar.tsx"
+import {Toaster} from "@/components/ui/sonner"
+import {pullConfig} from "@/lib/config"
+import * as api from "@/services/api"
 
-import "#styles/global.css"
+import "@/styles/global.css"
 
-import {$authState, AuthState} from "#stores/auth"
-import {$theme, Theme} from "#stores/themes"
+import {$authState, AuthState} from "@/stores/auth"
+import {$theme, Theme} from "@/stores/themes"
 
 import {routeTree} from "./routeTree.gen"
 
